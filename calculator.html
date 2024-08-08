@@ -4,7 +4,39 @@
     <title>Calculator</title>
     <link rel="shortcut icon" href="#">
 </head>
-<h1>Javascript Calculator</h1>
+<h1 class="header_Title" >Javascript Calculator</h1>
+<!-- Result containers -->
+<div class="container">
+    <div class="textfield" id="textfield">
+        <input class="show" id="total" type="text" ><br>
+        <input class="show" id="show" name="show" type="text">
+    </div>
+    <!-- button container -->
+    <div class="buttons" id="buttons">
+        <button class="btn" onclick="show.value= '',total.value='' ">AC</button>
+        <button class="btn" onclick="show.value=show.value.toString().slice(0,-1)">DEL</button>
+        <button class="btn" onclick="show.value='', total.value=''">OFF</button>
+        <button class="btn" onclick="show.value+='/'">/</button>
+        <button class="btn" onclick="show.value+='1'">1</button>
+        <button class="btn" onclick="show.value+='2'">2</button>
+        <button class="btn" onclick="show.value+='3'">3</button>
+        <button class="btn" onclick="show.value+='*'">X</button>
+        <button class="btn" onclick="show.value+='4'">4</button>
+        <button class="btn" onclick="show.value+='5'">5</button>
+        <button class="btn" onclick="show.value+='6'">6</button>
+        <button class="btn" onclick="show.value+='-'">-</button>
+        <button class="btn" onclick="show.value+='7'">7</button>
+        <button class="btn" onclick="show.value+='8'">8</button>
+        <button class="btn" onclick="show.value+='9'">9</button>
+        <button class="btn" onclick="show.value+='+'">+</button>
+        <button class="btn" onclick="show.value+='0'">0</button>
+        <button class="btn" onclick="show.value+=total.value">ANS</button>
+        <button class="btn" onclick="show.value+='.'">.</button>
+        <button class="btn" onclick="total.value=eval(show.value), show.value='' "> = </button>
+        <!-- The eval() function evaluates JavaScript code represented as a string and returns its completion value. The source is parsed as a script. which is initiated with a event click -->
+    </div>
+</div>
+
 <body class="body">
    
 </body>

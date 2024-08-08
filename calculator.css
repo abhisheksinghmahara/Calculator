@@ -1,3 +1,61 @@
-.header_Title{
-    
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+.body {
+    color: rgba(255, 255, 255, 0.872);
+    background: linear-gradient(to left, rgb(154, 149, 149), rgb(72, 72, 71), rgb(7, 7, 6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.textfield {
+    height: 9rem;
+    width: 25rem;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.show {
+    background-color: rgba(12, 10, 10, 0.386);
+    color: white;
+    text-align: right;
+    height: 50%;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 50px;
+    border: 0px;
+    border-top: 1px solid  rgb(72, 72, 71);
+}
+
+.buttons {
+    justify-content: center;
+    background-color: rgba(12, 9, 9, 0.422);
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.btn {
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(251, 251, 251, 0.482);
+}
+
+.btn:hover {
+    color: aliceblue;
+    background-color: black;
+}
+
+.btn:active {
+    background-color: aliceblue;
+    color: black;
 }
